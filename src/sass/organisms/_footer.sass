@@ -1,0 +1,44 @@
+footer
+    width: 100%
+    padding: 60px 0!important
+    +flexbox
+    +justify-content(center)
+    
+    .container
+        +flexbox
+        +justify-content(space-between)
+        width: 70%
+        .logo
+            width: 40%
+            +flexbox
+        .contatos   
+            width: 33%
+            +flexbox
+            +flex-wrap(wrap)
+            .email,
+            .telefone    
+                width: 100%
+                margin-bottom: 20px
+                h3
+                    
+                a
+                    text-decoration: none
+                    color: #222
+            
+        .sociais 
+            width: 33%
+            ul
+                width: 100%
+                +flexbox
+                
+                li
+                    a
+                        text-decoration: none
+                        color: #222
+                        
+                        i::before
+                            +font-size(30px)
+                        .facebook
+                        .instagram
+                        .youtube    
+    

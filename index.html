@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/img/icones/font/flaticon.css">
+    <link rel="stylesheet" href="assets/css/geral.css">
+    <link rel="stylesheet" href="assets/css/conteudo.css">
+    <link rel="stylesheet" href="assets/css/plugin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="assets/img/logo-raised.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <div class="sub">
+                        <ul>
+                            <li><a href="cadastro.html">Cadastre-se</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#modalidades">Modalidades</a></li>
+                            <li><a href="#calendario">Calendário</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="banner">
+            <div class="container">
+                <h1>Título</h1>
+                <h2>Subtítulo</h2>
+                <p>Texto texto texto texto</p>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="imagem">
+                    <img src="assets/img/man-gym.png" alt="">
+                </div>
+                <div class="infos">
+                    <h1>Como Funciona</h1>
+                    <div class="texto">
+                        <p>
+                            In varius dui velit, sed lacinia lectus sagittis ut. Aliquam varius, augue sit amet volutpat fringilla,
+                            quam dolor condimentum ligula, vitae efficitur lacus ex ac tellus. tt Nullam mattis interdum tellus. 
+                        </p>
+                        <br>
+                        <p>
+                            Donec tincidunt erat vitae nibh molestie tincidunt. Vivamus varius aliquam lectus, commodo
+                            pretium nisl rutrum laoreet. Aliquam nec mauris posuere nunc viverra sagittis. Maecenas 
+                            volutpat erat eros, eget vulputate metus semper vel. Nulla vel tempor tortor.
+                            Mauris iaculis est ac augue porta suscipit.
+                        </p>
+                        
+                        <a href="cadastro.html">Cadastre-se Já</a>
+                    </div>
+                        
+                    
+                </div>
+            </div>
+        </section>
+        <section class="modalidades" id="modalidades">
+            <h1>Modalidades</h1>
+            <div class="opt">
+                <div class="caixa">
+                    <div class="caixaHover">
+                        <img src="assets/img/m1.png" alt="imagem artes marciais">
+                        <div class="hover">
+                            <a href="#">artes marciais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="caixa top">
+                    <div class="caixaHover">
+                        <img src="assets/img/m2.png" alt="imagem crossfit">
+                        <div class="hover">
+                            <a href="#">crossfit</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="caixa">
+                    <div class="caixaHover">
+                        <img src="assets/img/m3.png" alt="imagem academia">
+                        <div class="hover">
+                            <a href="#">academia</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="caixa top">
+                    <div class="caixaHover">
+                        <img src="assets/img/m4.png" alt="imagem pilates">
+                        <div class="hover">
+                            <a href="#">pilates</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="caixa">
+                    <div class="caixaHover">
+                        <img src="assets/img/m5.png" alt="imagem aeróbica">
+                        <div class="hover">
+                            <a href="#">aeróbica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cadastro" id="cadastro">
+           <h1>Cadastre-se</h1>
+            <div class="container">                
+                <form action="">
+                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="submit" value="Cadastre-se Já">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <section class="logo">
+                <a href="#"><img src="assets/img/logo-raised.png" alt=""></a>
+            </section>
+            <section class="contatos">
+                <div class="email">
+                    <h3>E-mail</h3>
+                    <a href="mailto:contato@studioimpulse.com.br">contato@studioimpulse.com.br</a>
+                </div>
+                <div class="telefone">
+                    <h3>Telefone</h3>
+                    <a href="tel:550012345678">+55 11 1234-5678</a>
+                </div>
+            </section>
+            <section class="sociais">
+                <ul>
+                    <li><a href="#"><i class="flaticon-facebook-logo-in-circular-button-outlined-social-symbol"></i></a></li>
+                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>
+                    
+                </ul>
+            </section>
+        </div>
+    </footer>
+    
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+    </script>
+</body>
+</html>
